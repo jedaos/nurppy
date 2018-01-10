@@ -1,0 +1,22 @@
+<h1>New to Nurppy?</h1>
+<h2>No problem. Tell Nurppy about yourself.</h2>
+<%= form_with scope: :user, url: users_path, local: true do |form| %>
+  <p>
+    <%= form.label :My_area_of_expertise %><br>
+    <%= form.text_field :My_area_of_expertise %>
+  </p>
+
+  <p>
+    <%= form.label :my_creditials %><br>
+    <%= form.text_area :my_creditials %>
+  </p>
+
+  <p>
+    <%= form.label :my_skills %><br>
+    <%= form.text_area :my_skills %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
